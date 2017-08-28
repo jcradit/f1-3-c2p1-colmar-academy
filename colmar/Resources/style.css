@@ -1,0 +1,312 @@
+body {
+	font-size: 18px;
+}
+
+.header-desktop {
+	display: flex;
+	height: 64px;
+	margin-left: 24px;
+	align-items: center;
+	padding: 0 24px;
+}
+
+.header-mobile {
+	display: none;
+}
+
+.header-desktop img {
+	height: 32px;
+}
+
+.header-desktop a {
+	text-decoration: none;
+	margin-left: 16px;
+}
+
+nav {
+	margin-left: auto;
+}
+
+.jumbotron {
+	background-color: #DCDCDC;
+	display: flex;
+	width: 100%;
+	padding: 32px 24px;
+}
+
+.bannerPicture {
+	width: 60%;
+	height: auto;
+	display: block;
+	border-right: 1px solid gray;
+	padding: 32px 24px;
+}
+
+.bannerPicture img {
+	max-width: 100%;
+	height: auto;
+}
+
+.bannerPicture video {
+	max-width: 100%;
+	height: auto;
+}
+
+.startHere {
+	display: flex;
+	justify-content: center;
+	flex-flow: wrap column;
+	margin-left: 40px;
+}
+
+.button {
+	color: white;
+	background-color: darkgray;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	text-align: center;
+	border: 0;
+	display: inline-block;
+}
+
+.ourWhy {
+	display: flex;
+	padding: 32px 24px;
+
+}
+
+.aboutImg {
+	max-width: 35%;
+	height: auto;
+	margin: 16px;
+}
+
+.aboutUs {
+ 	width: 40%;
+
+}
+
+.about {
+	display: flex;
+	border-bottom: 1px solid gray;
+	text-align: left;
+}
+
+.about:last-child {
+	border-bottom: none;
+	background-color: #DCDCDC;
+}
+
+.thesisExhibit .about:first-child {
+	background-color: #DCDCDC;
+}
+
+.thesisExhibit .about:last-child {
+	background-color: transparent;
+}
+
+.mobileImg {
+	display: none;
+}
+
+.about img {
+	width: 100%;
+	height: auto;
+}
+
+.aboutDetails {
+	width: 65%;
+}
+
+.startLearning {
+	text-align: center;
+	background-color: #DCDCDC;
+	padding: 32px 0 16px 0;
+}
+
+.courses {
+  	display: flex; 
+  	justify-content: space-around;
+  	width: auto;
+  	flex-wrap: wrap;
+}
+
+.learningRow {
+	padding-bottom: 24px;
+	background-color: white;
+	width: 30%;
+  	margin: 16px;
+}
+
+.learningRowImg {
+	width: 100%;
+	height: auto;
+}
+
+.learningRow img {
+	width: 100%;
+	height: auto;
+}
+
+.caption {
+	padding: 16px 16px;
+	text-align: left;
+}
+
+.thesisExhibit {
+	text-align: center;
+}
+
+.thesisDetail {
+	display: flex;
+	text-align: left;
+}
+
+footer {
+	justify-content: space-between;
+	background-color: #DCDCDC;
+	padding: 0 24px;
+	border-top: 2px solid gray;
+	display: flex;
+}
+
+.copyright {
+	padding: 16px 0;
+	display: block;
+}
+
+.footerLinks {
+	display: inline-block;
+	margin: 16px 0 0 16px;
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 710px) {
+	.header-desktop {
+		display: none;
+	}
+
+	.header-mobile {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.jumbotron {
+		padding: 0;
+		flex-wrap: wrap;
+	}
+
+	.startHere {
+		width: 100%;
+		display: flex;
+		flex-flow: wrap-column;
+		justify-content: center;
+		margin: 32px 16px;
+	}
+
+	.bannerPicture {
+		width: 100%;
+		height: 180px;
+		overflow: hidden;
+	}
+
+	.ourWhy {
+		display: flex;
+		padding: 32px 24px;
+	}
+
+	.ourWhy .bannerPicture {
+		display: none;
+	}
+
+	.desktopImg {
+		display: none;
+	}
+
+	.mobileImg {
+		display: inline-block;
+		width: 100%;
+		height: auto;
+	}
+
+	.aboutUs {
+		width: 100%;
+	}
+
+	.about {
+		height: auto;
+		flex-flow: wrap column;
+		border: 0;
+
+	}
+
+	.aboutImg {
+		min-width: 100%;
+		margin:0;
+		padding: 16px;
+		height: 180px;
+		overflow: hidden;
+	}
+
+	.aboutDetails {
+		margin-left:32px;
+		margin-bottom: 16px;
+	}
+
+	.startLearning {
+		padding-bottom: 24px;
+	}
+
+	.courses {
+	 	justify-content: space-around;
+	 	width: 100%;
+	 	margin: 0 auto;
+	}
+
+	.learningRow {
+		width: 100%;
+		margin: 8px 16px;
+		padding: 0;
+	}
+
+	.learningRowImg {
+		display: none;
+	}
+
+	.caption h4{
+		display: none;
+	}
+
+	.caption {
+		padding: 16px 16px;
+	}
+
+	.thesisExhibit {
+		padding-bottom: 24px;
+	}
+
+	.thesisDetail .bannerPicture {
+		height: auto;
+    	width: 100%;
+    	padding: 0;
+	}
+
+	.bannerPicture h2, .bannerPicture h4 {
+		display: none;
+	}
+
+	.thesisDetail .aboutUs {
+		display: none;
+	}
+
+	.footerLinks {
+		display: none;
+	}
+
+	.about:last-child {
+		border-bottom: none;
+		background-color: transparent;
+	}
+}
